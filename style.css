@@ -152,6 +152,7 @@ ul li {
   flex-basis: 20%;
   position: sticky;
   align-self: flex-start;
+  overflow-block: scroll;
 }
 
 .main-content {
@@ -700,13 +701,14 @@ display: inline-flex;
 .pages_and_profiles{display: flex; justify-content: space-between; margin-bottom: 10px;}
 
 .pages_and_profiles a img {
-  width: 15px;
+  width: 14px;
   transform: rotate(90deg);
 }
 
 .pages_and_profiles h4 {
   font-weight: bold;
   color: #878787;
+  font-size: 14px;
 }
 
 .Fohr-tuhn-Festus a img {
@@ -759,7 +761,7 @@ display: inline-flex;
   font-size: 13px;
 }
 
-.friend-request-container{border-bottom: 1px solid #ccc;}
+.friend-request-container{border-bottom: 1px solid #ccc; margin-bottom: 10px;}
 
 .friend-request a {
   display: flex;
@@ -767,7 +769,7 @@ display: inline-flex;
   align-items: center;
   color: #1876f2;
   width: fit-content;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .friend-request {
@@ -784,6 +786,7 @@ display: inline-flex;
 .friend-request h4 {
   font-weight: bold;
   color: #878787;
+  font-size: 14px;
 }
 
 .requests{
@@ -858,3 +861,69 @@ right: 6px;
 .requests-btns .btn2 {
   background-color: #e2e4e4;
 }
+
+
+.birthdays-container{margin-bottom: 10px; border-bottom: 1px solid #ccc;}
+.birthdays h4 {
+  font-weight: bold;
+  color: #878787;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.bday{display: flex; margin-bottom: 10px;}
+
+.birthday-left img{
+  width: 30px;
+  margin-right: 10px;
+}
+.birthday-right p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #626262;
+}
+.birthday-right span {font-weight: 100;}
+
+.contacts-container {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contacts h4 {
+  font-weight: bold;
+  color: #878787;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+.contacts{display: flex; margin-bottom: 10px;}
+.contacts ul {list-style: none;}
+.contacts ul li{margin-left: 5px;}
+.contacts ul li a img{width: 18px;}
+
+.people-online{display: flex;}
+.people-online .adjust{display: inline-flex;}
+.people-online .users-img{
+  margin-right: 10px;
+}
+
+.people-online .users-name p{
+  align-items: center;
+  font-size: 13px;
+    font-weight: bold;
+    color: #626262;
+    margin-top: 10px;
+}
+
+.users a{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #626262;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.users .nav-profile-pic{margin-right: 10px;}
