@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Clone</title>
-    <link rel="stylesheet" href="/Facebook-Clone/css/homepagestyle.css">
+    <link rel="stylesheet" href="/css/homepagestyle.css">
+    <script src="https://kit.fontawesome.com/09bba422f6.js" crossorigin="anonymous"></script>
    </head>
 <body>
   
@@ -13,35 +14,88 @@
   <nav>
     
     <div class="nav-left">
-      <img src="/Facebook-Clone/Images/facebook-logo-1-2.png" class="logo">
+      <img src="/Images/facebook-logo-1-2.png" class="logo">
       
       <div class="search-box">
-        <img src="/Facebook-Clone/Images/search.png">
+        <img src="/Images/search.png">
         <input type="text" placeholder="Search Facebook">
       </div>
     </div>
         
     <div class="nav-center">
      <ul>
-       <li><img src="/Facebook-Clone/Images/logo-house-home-house-9d18e7b59c84c2eef1161c1d7d5f6a51.png"></li>
-       <li><img src="/Facebook-Clone/Images/flag.png"></li>
-       <li><img src="/Facebook-Clone/Images/youtube_tv_icon_138003.png"></li>
-       <li><img src="/Facebook-Clone/Images/store.png" style="width: 24px;"></li>
-       <li><img src="/Facebook-Clone/Images/plugin.png"style="width: 24px;"></li>
+       <li><img src="/Images/logo-house-home-house-9d18e7b59c84c2eef1161c1d7d5f6a51.png"></li>
+       <li><img src="/Images/flag.png"></li>
+       <li><img src="/Images/youtube_tv_icon_138003.png"></li>
+       <li><img src="/Images/store.png" style="width: 24px;"></li>
+       <li><img src="/Images/plugin.png"style="width: 24px;"></li>
       </ul> 
     </div>
 
     <div class="nav-right">
       <ul>
-       <li><div class="nav-right-img-container"><img src="/Facebook-Clone/Images/dots-icon-5.jpg"></div></li>
-       <li><div class="nav-right-img-container"><img src="/Facebook-Clone/Images/messenger-black_100114.png" class="black-messenger"></div></li>
-       <li><div class="nav-right-img-container notifications"><img src="/Facebook-Clone/Images/ios7-bell_icon-icons.com_50334.png" style="transform: rotate(-25deg);"></div></li>
+       <li><div class="nav-right-img-container"><img src="/Images/dots-icon-5.jpg"></div></li>
+       <li><div class="nav-right-img-container"><img src="/Images/messenger-black_100114.png" class="black-messenger"></div></li>
+       <li><div class="nav-right-img-container notifications"><img src="/Images/ios7-bell_icon-icons.com_50334.png" style="transform: rotate(-25deg);"></div></li>
       </ul>
       
-      <div class="nav-profile-pic online">
-        <img src="/Facebook-Clone/Images/profile-pic.png" alt="">
+      <div class="nav-profile-pic online" onclick="settingsMenuToggle()">
+        <img src="/Images/profile-pic.png" alt="">
       </div>
     </div>
+
+
+    <!-- Settings-menu -->
+    <div class="settings-menu">
+
+
+      <div id="dark-btn">
+        <span></span>
+      </div>
+
+      <div class="settings-menu-iner">
+        <div class="user-profile">
+          <img src="/images/profile-pic.png">
+          <div>
+            <p>Fohr-tuhn Festus</p>
+            <a href="#">See your profile</a>
+          </div>
+        </div>
+        <hr>
+        <div class="user-profile">
+          <img src="/images/feedback.png">
+          <div>
+            <p>Give Feedback</p>
+            <a href="#">Help us to improve the new design</a>
+          </div>
+        </div>
+        <hr>
+        <div class="settings-links">
+          <img src="/Images/setting.png" class="settings-icon">
+          <a href="#">Settings & Privacy <img src="/Images/arrow.png" width="10px"></a>
+        </div>
+        <div class="settings-links">
+          <img src="/Images/help.png" class="settings-icon">
+          <a href="#">Help & Support <img src="/Images/arrow.png" width="10px"></a>
+        </div>
+        <div class="settings-links">
+          <img src="/Images/display.png" class="settings-icon">
+          <a href="#">Display & Accessibility <img src="/Images/arrow.png" width="10px"></a>
+        </div>
+        <div class="settings-links">
+          <img src="/Images/logout.png" class="settings-icon">
+          <a href="#">Logout <img src="/Images/arrow.png" width="10px"></a>
+        </div>
+        
+
+
+
+      </div>
+      
+    </div>
+    <!-- Settings-menu -->
+
+
   </nav>
 <!------------ Navbar ------------>
 
@@ -52,23 +106,24 @@
 <!------------- left-sidebar ----------------->
     <div class="left-sidebar">
       <div class="imp-links">
-        <a href="#"><img src="/Facebook-Clone/Images/profile-pic.png" class="profile-picture">Fohr-tuhn Festus</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-frnds.png">Friends</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-groups.png">Groups</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-marketplace.png">Marketplace</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-watch.png">Watch</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-memories.png">Memories</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-saved.png">Saved</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-pages.png">Pages</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-events.png">Events</a>
-        <a href="#"><div class="arrow-container"><img src="/Facebook-Clone/Images/arrow.png" class="arrow"></div>See more</a>
+        <a href="#"><img src="/Images/profile-pic.png" class="profile-picture">Fohr-tuhn Festus</a>
+        <a href="#"><img src="/Images/facebook-frnds.png">Friends</a>
+        <a href="#"><img src="/Images/facebook-groups.png">Groups</a>
+        <a href="#"><img src="/Images/facebook-marketplace.png">Marketplace</a>
+        <a href="#"><img src="/Images/facebook-watch.png">Watch</a>
+        <a href="#"><img src="/Images/facebook-memories.png">Memories</a>
+        <a href="#"><img src="/Images/facebook-saved.png">Saved</a>
+        <a href="#"><img src="/Images/facebook-pages.png">Pages</a>
+        <a href="#"><img src="/Images/facebook-events.png">Events</a>
+        <a href="#"><div class="arrow-container"><img src="/Images/arrow.png" class="arrow"></div>See more</a>
       </div>
 
       <div class="shortcut-links">
         <p>Your shortcuts</p>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-clash-of-kings.png">Clash of Kings</a>
-        <a href="#"><img src="/Facebook-Clone/Images/facebook-criminal-case.webp">Criminal Case</a>
+        <a href="#"><img src="/Images/facebook-clash-of-kings.png">Clash of Kings</a>
+        <a href="#"><img src="/Images/facebook-criminal-case.webp">Criminal Case</a>
       </div> 
+
 <p>
 <a href="https://web.facebook.com/privacy/policy/?entry_point=comet_dropdown">Privacy</a> ·
 <a href="https://web.facebook.com/policies?ref=pf">Terms</a> ·
@@ -79,13 +134,9 @@
 · Meta © 2022
 </p>
 
+
     </div>
 <!------------- left-sidebar ----------------->
-
-
-
-
-
 
 
     
@@ -94,105 +145,230 @@
 
       <div class="story-gallery">
         <div class="story story1">
-          <a href="#"><img src="/Facebook-Clone/images/upload.png"></a>
+          <a href="#"><img src="/images/upload.png"></a>
           <div class="create-story">
             <p>Create Story</p>
           </div>
         </div>
         <div class="story story2">
-         <a href="#"> <img src="/Facebook-Clone/images/member-1.jpg"></a>
+         <a href="#"> <img src="/images/member-1.jpg"></a>
           <p>Alison</p>
         </div>
         <div class="story story3">
-         <a href="#"> <img src="/Facebook-Clone/images/member-2.jpg"></a>
+         <a href="#"> <img src="/images/member-2.jpg"></a>
           <p>Jackson</p>
         </div>
         <div class="story story4">
-         <a href="#"> <img src="/Facebook-Clone/images/member-3.jpg"></a>
+         <a href="#"> <img src="/images/member-3.jpg"></a>
           <p>Samona</p>
         </div>
         <div class="story story5">
-          <a href="#"> <img src="/Facebook-Clone/images/member-4.jpg"></a>
+          <a href="#"> <img src="/images/member-4.jpg"></a>
           <p>John Doe</p>
         </div> 
       </div>
 
 
-
       <div class="write-post-container">
 
-<div class="border">
         <div class="user-profile">
-          <img src="/Facebook-Clone/images/profile-pic.png">
+          <img src="/images/profile-pic.png">
           <!--  -->
             <div class="write-post">
         <input type="text" placeholder="What's on your mind, Fohr-tuhn?">
       </div>
         </div>
-</div>
+        <hr> <!--  --><!--  --><!--  --><!--  --><!--  -->
 
 
           <div class="add-post-link">
-            <a href="#"><img src="/Facebook-Clone/Images/live-video.png"> Live video</a>
-            <a href="#"><img src="/Facebook-Clone/Images/photo.png"> Photo/video</a>
-            <a href="#"><img src="/Facebook-Clone/Images/feeling.png"> Feeling/activity</a>
+            <a href="#"><img src="/Images/live-video.png"> Live video</a>
+            <a href="#"><img src="/Images/photo.png"> Photo/video</a>
+            <a href="#"><img src="/Images/feeling.png"> Feeling/activity</a>
           </div>
       </div>
 <!--  -->
 <div class="create-room-container">
 
           <div class="room-container">
-            <a href="#"><img src="/Facebook-Clone/Images/create-room-white.jpg"> Create room</a>
+            <a href="#"><img src="/Images/create-room-white.jpg"> Create room</a>
           </div>
           <div class="create-room-profile-pic">
-        <img src="/Facebook-Clone/Images/member-3.jpg" alt="">
+        <img src="/Images/member-3.jpg" alt="">
       </div>
       <div class="create-room-profile-pic onlinee">
-        <img src="/Facebook-Clone/Images/photo-5.jpg" alt="">
+        <img src="/Images/photo-5.jpg" alt="">
       </div>
       <div class="create-room-profile-pic">
-        <img src="/Facebook-Clone/Images/member-4.jpg" alt="">
+        <img src="/Images/member-4.jpg" alt="">
       </div>
       <div class="create-room-profile-pic onlinee">
-        <img src="/Facebook-Clone/Images/member-2.jpg" alt="">
+        <img src="/Images/member-2.jpg" alt="">
       </div>
       <div class="create-room-profile-pic">
-        <img src="/Facebook-Clone/Images/photo-1.jpg" alt="">
+        <img src="/Images/photo-1.jpg" alt="">
       </div>
       <div class="create-room-profile-pic onlinee">
-        <img src="/Facebook-Clone/Images/photo-2.jpg" alt="">
+        <img src="/Images/photo-2.jpg" alt="">
       </div>
       <div class="create-room-profile-pic">
-        <img src="/Facebook-Clone/Images/photo-4.jpg" alt="">
+        <img src="/Images/photo-4.jpg" alt="">
       </div>
       <div class="create-room-profile-pic onlinee">
-        <img src="/Facebook-Clone/Images/photo-3.jpg" alt="">
+        <img src="/Images/photo-3.jpg" alt="">
       </div>
-        <a href="#"><div class="forward-arrow-container"><img src="/Facebook-Clone/Images/arrow.png" class="forward-arrow"></div></a>
+        <a href="#"><div class="forward-arrow-container"><img src="/Images/arrow.png" class="forward-arrow"></div></a>
 
       </div>
-
     <!--  -->
-      <div class="post-container">
+
+    <div class="post-container">  <!-- Post 1 -->
+
+      <div class="post-row">
         <div class="user-profile Peniel">
-          <img src="/Facebook-Clone/images/Peniel-lawrence.jpg">
-          <div>
-            <p>Peniel Lawrence <span>is at</span> The Holy Spirit.</p>
-            <span>19h ·<img src="/Facebook-Clone/Images/couples2.png" class="couple"> </span>
-            <a href="#"><img src="/Facebook-Clone/Images/ellipsis-7-444674.png"></a>
-          </div>
+          <img src="/Images/Peniel-lawrence.jpg">
+      <div>
+        <p>Peniel Lawrence <span>is at</span> The Holy Spirit.</p>
+          <span>19h ·<img src="/Images/couples2.png" class="couple"> </span>
+            <!-- <a href="#"><img src="/Images/ellipsis-7-444674.png"></a> -->
+      </div>
         </div>
+        <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+      </div>
+      
         <p class="post-text">
-            <img src="/Facebook-Clone/Images/flower.png"><span>Helped Flaws</span><img src="/Facebook-Clone/Images/flower.png">
-       <br><br> <img src="/Facebook-Clone/Images/camera.png"><span>: @sirmapy</span>
+            <img src="/Images/flower.png"><span>Helped Flaws</span><img src="/Images/flower.png">
+       <br><br> <img src="/Images/camera.png"><span>: @sirmapy</span>
       <br> <br> <a href="#">#JESUS</a>
         </p>
-        <img src="/Facebook-Clone/Images/1.jpg" class="post-img">
+        <img src="/Images/1.jpg" class="post-img two">
+        <img src="/Images/2.jpg" class="post-img two">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/Images/like-blue.png"> 120</div>
+            <div><img src="/Images/comments.png"> 90</div> 
+            <div><img src="/Images/share.png"> 10</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="/Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="post-container"> <!-- Post 2 -->
+        <div class="post-row">
+          <div class="user-profile Peniel">
+            <img src="/Images/status-2.jpg">
+            <div>
+              <p>Ayomide Balogun 
+                <!-- 
+                <span>is at</span> The Holy Spirit.-->
+              </p>
+                
+              <span>1h ·<img src="/Images/couples2.png" class="couple"> </span>
+              <!-- <a href="#"><img src="/Images/ellipsis-7-444674.png"></a> -->
+            </div>
+          </div>
+          <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+        </div>
+      
+        <p class="post-text"> 
+          <!-- <img src="/Images/flower.png"><span>Helped Flaws</span><img src="/Images/flower.png">
+          <br><br> <img src="/Images/camera.png"><span>: @sirmapy</span>
+          <br> <br> <a href="#">#JESUS</a> -->
+        </p>
+        <img src="/Images/Ayomide.jpg" class="post-img">
+      
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/Images/like.png"><img src="/Images/love(big).png"><img src="/Images/wow.png"> 300</div>
+            <div><img src="/Images/comments.png"> 120</div>
+            <div><img src="/Images/share.png"> 30</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="/Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="post-container"> <!-- Post 3 -->
+        <div class="post-row">
+          <div class="user-profile Peniel">
+            <img src="/Images/A-Jay1.jpg">
+            <div>
+              <p>A-Jay <span>is dancing</span> @Anonymous</p>
+              <span>23 mins ago ·<img src="/Images/couples2.png" class="couple"> </span>
+              <!-- <a href="#"><img src="/Images/ellipsis-7-444674.png"></a> -->
+            </div>
+          </div>
+          <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+        </div>
+      
+        <p class="post-text"> Like and share this video with friends.
+          <!-- <img src="/Images/flower.png"><span>Helped Flaws</span><img src="/Images/flower.png">
+          <br><br> <img src="/Images/camera.png"><span>: @sirmapy</span>
+          -->
+          <br> <a href="#">#AJ <br>#dancing <br>#tryouts</a> 
+        </p>
+        <img src="/Images/A-Jay2.jpg" class="post-img">
+      
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/Images/love(big).png"><img src="/Images/wow.png"> 1.5k</div>
+            <div><img src="/Images/comments.png"> 500</div>
+            <div><img src="/Images/share.png"> 100</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="/Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="post-container"> <!-- Post 4 -->
+        <div class="post-row">
+          <div class="user-profile Peniel">
+            <img src="/Images/Faa'vor2.jpg">
+            <div>
+              <p>Dark_grey 
+                <!--
+                <span>is dancing</span> @Anonymous
+              -->
+              </p>
+              <span>1 min ago ·<img src="/Images/couples2.png" class="couple"> </span>
+              <!-- <a href="#"><img src="/Images/ellipsis-7-444674.png"></a> -->
+            </div>
+          </div>
+          <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+        </div>
+      
+        <p class="post-text"> Happy birthday Faa'vor
+          <!-- <img src="/Images/flower.png"><span>Helped Flaws</span><img src="/Images/flower.png">
+                <br><br> <img src="/Images/camera.png"><span>: @sirmapy</span>
+                -->
+          <br> <a href="#">#Throwback <br>#2021_birthday</a>
+        </p>
+        <img src="/Images/Faa'vor1.jpg" class="post-img two"> 
+        <img src="/Images/Faa'vor3.jpg" class="post-img two">
+      
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="/Images/like-blue.png"><img src="/Images/love(big).png"><img src="/Images/wow.png"> 4.5k</div>
+            <div><img src="/Images/comments.png"> 1k</div>
+            <div><img src="/Images/share.png"> 700</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="/Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      
       </div>
 
 
-
-
+      <button type="button" class="load-more-btn">Load More</button>
 
 
     </div>
@@ -200,22 +376,17 @@
 
 
 
-
-
-
-
-
 <!------------- right-sidebar ---------------->
 <div class="right-sidebar">
   <div class="pages_and_profiles">
     <h4>Your Pages and profiles </h4>
-    <a href="#"><img src="/Facebook-Clone/Images/ellipsis-7-444674.png"></a>
+    <a href="#"><img src="/Images/ellipsis-7-444674.png"></a>
   </div> 
       <div class="Fohr-tuhn-Festus">
-        <a href="#"><img src="/Facebook-Clone/Images/profile-pic.png" class="profile-picture">Fohr-tuhn Festus</a>
+        <a href="#"><img src="/Images/profile-pic.png" class="profile-picture">Fohr-tuhn Festus</a>
         <div class="notifications_and_promotion">
-        <a href="#"><img src="/Facebook-Clone/Images/notification.png" style="transform: rotate(-50deg); filter: blur(0.4px);">2 Notifications</a>
-        <a href="#"><img src="/Facebook-Clone/Images/bullhorn.png" style="width: 15px; margin-left: 5px; filter: blur(0.4px)">Create promotion</a>
+        <a href="#"><img src="/Images/notification.png" style="transform: rotate(-50deg); filter: blur(0.4px);">2 Notifications</a>
+        <a href="#"><img src="/Images/bullhorn.png" style="width: 15px; margin-left: 5px; filter: blur(0.4px)">Create promotion</a>
         </div>
       </div>
       
@@ -228,7 +399,7 @@
 
   <div class="requests">
     <div class="left-side">
-      <img src="/Facebook-Clone/Images/feed-image-4.jpg">
+      <img src="/Images/feed-image-4.jpg">
     </div>
     <div class="right-side">
      <div class="name">
@@ -236,8 +407,8 @@
       <span>5d</span>
      </div>
       <div class="overlap-img">
-        <img src="/Facebook-Clone/Images/feed-image-1.jpg" class="no1">
-        <img src="/Facebook-Clone/Images/feed-image-3.jpg" class="no2">
+        <img src="/Images/feed-image-1.jpg" class="no1">
+        <img src="/Images/feed-image-3.jpg" class="no2">
         <small>21 mutual friends</small>
       </div>
       <div class="requests-btns">
@@ -253,7 +424,7 @@
     <h4>Birthdays </h4>
   </div>
     <div class="bday">
-    <div class="birthday-left"><img src="/Facebook-Clone/Images/birthday-box.svg"></div>
+    <div class="birthday-left"><img src="/Images/birthday-box.svg"></div>
     <div class="birthday-right">
       <p>Mirabel Sunday <span>and </span>3 others <span>have birthdays today.</span></p>
     </div>
@@ -264,9 +435,9 @@
   <div class="contacts">
     <h4>Contacts </h4>
     <ul>
-      <li><a href="#"><img src="/Facebook-Clone/Images/add-video.png"></a></li>
-      <li><a href="#"><img src="/Facebook-Clone/Images/search.png" style="width: 15px;"></a></li>
-      <li><a href="#"><img src="/Facebook-Clone/Images/ellipsis-7-444674.png" style="width: 14px;transform: rotate(90deg);"></a></li>
+      <li><a href="#"><img src="/Images/add-video.png"></a></li>
+      <li><a href="#"><img src="/Images/search.png" style="width: 15px;"></a></li>
+      <li><a href="#"><img src="/Images/ellipsis-7-444674.png" style="width: 14px;transform: rotate(90deg);"></a></li>
     </ul>
   </div>
 
@@ -275,42 +446,42 @@
         <div class="users">
         <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/Ayomide.jpg" alt="">
+          <img src="/Images/Ayomide.jpg" alt="">
           </div>Ayomide Balogun
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-1.jpg" alt="">
+          <img src="/Images/member-1.jpg" alt="">
           </div>T'roy Chris
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-2.jpg" alt="">
+          <img src="/Images/member-2.jpg" alt="">
           </div>Samuel Umana
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-.9.png" alt="">
+          <img src="/Images/member-.9.png" alt="">
           </div>Mdy Benson
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-9.jpg" alt="">
+          <img src="/Images/member-9.jpg" alt="">
           </div>Henrietta
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-3.jpg" alt="">
+          <img src="/Images/member-3.jpg" alt="">
           </div>Khen Nie
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-7.png" alt="">
+          <img src="/Images/member-7.png" alt="">
           </div>Dise Benson
         </a>
 <a href="#">
           <div class="nav-profile-pic online-pic">
-          <img src="/Facebook-Clone/Images/member-6.png" alt="">
+          <img src="/Images/member-6.png" alt="">
           </div>Fahvy Festus
         </a>
 
@@ -319,4 +490,7 @@
     </div>      
 <!------------- right-sidebar ---------------->
 
+</div>
+
+<script src="/script.js"></script>
 </body>
